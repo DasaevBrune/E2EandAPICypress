@@ -50,6 +50,31 @@ Test Descriptions
 
 4. page_object: This directory contains page object files that define the structure and behavior of different application pages.
 
-Feel free to add comments and improvements
+Feel free to add comments and improvements.
+
+Conclusions:
+
+API Tests
+The API tests ensure that CRUD operations for users are functioning correctly.
+By using Cypress, we can easily automate these tests and verify the API endpoints' responses.
+Running these tests regularly can help ensure that the API remains stable and continues to meet the requirements.
+E2E Tests
+
+Writing E2E tests for the SauceDemo application presented some initial challenges, particularly regarding handling the 401 error that occurred even after successful login.
+Despite encountering difficulties, we persisted and sought solutions from various sources, including Stack Overflow and GitHub issues related to Cypress.
+Ultimately, we were able to resolve the issue by configuring Cypress to handle the error and adjusting the request headers.
+These tests provide comprehensive coverage of the user flow within the SauceDemo application, helping to ensure its functionality and usability.
+Source: https://stackoverflow.com/questions/50935402/401 
+        https://github.com/cypress-io/cypress/issues/21213
+        
+
+Overall
+The combination of API and E2E tests provides thorough validation of both the backend API and the frontend user experience.
+Regularly running these tests as part of the CI/CD pipeline can help catch regressions early and maintain the quality of the application.
+Continuous improvement in test automation practices, along with proactive troubleshooting of issues, ensures the reliability and robustness of the testing suite.
+
+
+
+
 
 
